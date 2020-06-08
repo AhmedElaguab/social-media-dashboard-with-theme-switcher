@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social Media Dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__head">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="header__foot">
+        Dark Mode
+      </div>
+    </header>
 
-  Dark Mode
+    <div class="stats">
+      <div class="stats__card">
+        <div class="stats__link">@nathanf</div>
+        <div class="stats__followers">1987 Followers</div>
+        <div class="stats__new">12 Today</div>
+      </div>
+      <div class="stats__card">
+        <div class="stats__link">@nathanf</div>
+        <div class="stats__followers">1044 Followers</div>
+        <div class="stats__new">99 Today</div>
+      </div>
+      <div class="stats__card">
+        <div class="stats__link">@realnathanf</div>
+        <div class="stats__followers">11k Followers</div>
+        <div class="stats__new">1099 Today</div>
+      </div>
+      <div class="stats__card">
+        <div class="stats__link">Nathan F.</div>
+        <div class="stats__followers">8239 Subscribers</div>
+        <div class="stats__new">144 Today</div>
+      </div>
+    </div>
 
-  
+    <div class="overview">
+      <h2 class="overview__title">Overview - Today</h2>
+      <div class="overview__card">
+        <div class="overview__card__title">Page Views</div>
+        <div class="overview__icon">87</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">3%</div>
+      </div>
+      <div class="overview__card">
+        <div class="overview__card__title">Likes</div>
+        <div class="overview__icon">52</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">2%</div>
+      </div>
+      <div class="overview__card">
+        <div class="overview__card__title">Likes</div>
+        <div class="overview__icon">5462</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">2257%</div>
+      </div>
+      <div class="overview__card">
+        <div class="overview__card__title">Profile Views</div>
+        <div class="overview__icon">52k</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">1375%</div>
+      </div>
+      <div class="overview__card">
+        <div class="overview__card__title">Retweets</div>
+        <div class="overview__icon">117</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">303%</div>
+      </div>
+      <div class="overview__card">
+        <div class="overview__card__title">Likes</div>
+        <div class="overview__icon">507</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">553%</div>
+      </div>
+      <div class="overview__card">
+        <div class="overview__card__title">Likes</div>
+        <div class="overview__icon">107</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">19%</div>
+      </div>
+      <div class="overview__card">
+        <div class="overview__card__title">Total Views</div>
+        <div class="overview__icon">1407</div>
+        <div class="overview__number"></div>
+        <div class="overview__percentage">12%</div>
+      </div>
+    </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
