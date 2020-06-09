@@ -3,13 +3,23 @@
   --color-light: white;
   --color-dark: #333;
   --color-gray: #6f7388;
+  --color-success: hsl(163, 72%, 41%);
+  --color-danger: hsl(356, 69%, 56%);
+  --color-facebook: hsl(208, 92%, 53%);
+  --color-twitter: hsl(203, 89%, 53%);
+  --color-instagram: linear-gradient(
+    to left,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+  --color-youtube: hsl(348, 97%, 39%);
   --bg-switch-light: hsl(230, 22%, 74%);
   --bg-switch-dark: linear-gradient(
     to right,
     hsl(210, 78%, 56%),
     hsl(146, 68%, 55%)
   );
-  --sc-md: 770px;
+  --bg-card-light: hsl(227, 47%, 96%);
 }
 
 /* Global styles */
@@ -71,6 +81,7 @@ body {
   padding: 1rem 0;
   font-weight: bold;
   color: var(--color-gray);
+  margin-bottom: 1.5rem;
 }
 
 /* Switch styles */
@@ -135,6 +146,100 @@ body {
 
 .switch .slider.round:before {
   border-radius: 50%;
+}
+
+/* Stats Styles */
+.stats__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: var(--bg-card-light);
+  border-radius: 4px;
+  padding: 1.2rem 0;
+  border-top: 4px solid;
+}
+
+.stats__card.stats__card-facebook {
+  border-color: var(--color-facebook);
+}
+
+.stats__card.stats__card-twitter {
+  border-color: var(--color-twitter);
+}
+
+.stats__card.stats__card-instagram {
+  border-color: var(--color-instagram);
+}
+
+.stats__card.stats__card-youtube {
+  border-color: var(--color-youtube);
+}
+
+.stats__link,
+.stats__followers,
+.stats__new {
+  padding: 0.75rem 0;
+}
+
+.stats__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.stats__link img {
+  margin-right: 0.5rem;
+}
+
+.stats__followers__number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.stats__followers__title {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-style: 0.8rem;
+  color: var(--color-gray);
+}
+
+.stats__new {
+  font-weight: bold;
+}
+
+.stats__new.stats__new-up {
+  position: relative;
+  color: var(--color-success);
+}
+
+.stats__new.stats__new-up::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 13px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid var(--color-success);
+  border-left: 5px solid transparent;
+}
+
+.stats__new.stats__new-down {
+  position: relative;
+  color: var(--color-danger);
+}
+
+.stats__new.stats__new-down::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 18px;
+  border-top: 5px solid var(--color-danger);
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
 
 /* Responsive Styles */
