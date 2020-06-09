@@ -8,7 +8,7 @@
   --color-facebook: hsl(208, 92%, 53%);
   --color-twitter: hsl(203, 89%, 53%);
   --color-instagram: linear-gradient(
-    to left,
+    to right,
     hsl(37, 97%, 70%),
     hsl(329, 70%, 58%)
   );
@@ -150,6 +150,7 @@ body {
 
 /* Stats Styles */
 .stats__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,23 +159,31 @@ body {
   background: var(--bg-card-light);
   border-radius: 4px;
   padding: 1.2rem 0;
-  border-top: 4px solid;
+  overflow: hidden;
 }
 
-.stats__card.stats__card-facebook {
-  border-color: var(--color-facebook);
+.stats__card::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  top: 0;
+  background: var(--color-dark);
+}
+.stats__card.stats__card-facebook::before {
+  background: var(--color-facebook);
 }
 
-.stats__card.stats__card-twitter {
-  border-color: var(--color-twitter);
+.stats__card.stats__card-twitter::before {
+  background: var(--color-twitter);
 }
 
-.stats__card.stats__card-instagram {
-  border-color: var(--color-instagram);
+.stats__card.stats__card-instagram::before {
+  background: var(--color-instagram);
 }
 
-.stats__card.stats__card-youtube {
-  border-color: var(--color-youtube);
+.stats__card.stats__card-youtube::before {
+  background: var(--color-youtube);
 }
 
 .stats__link,
