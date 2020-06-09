@@ -152,10 +152,6 @@ body {
 /* Stats Styles */
 .stats__card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   margin-bottom: 2rem;
   background: var(--bg-card-light);
   border-radius: 4px;
@@ -192,20 +188,34 @@ body {
   background: var(--color-youtube);
 }
 
-.stats__link,
+.stats__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.stats__header,
 .stats__followers,
 .stats__new {
   padding: 0.75rem 0;
 }
 
-.stats__link {
+.stats__header {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
 }
 
-.stats__link img {
+.stats__header a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.stats__header img {
   margin-right: 0.5rem;
 }
 
