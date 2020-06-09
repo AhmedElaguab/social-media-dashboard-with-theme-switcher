@@ -19,7 +19,8 @@
     hsl(210, 78%, 56%),
     hsl(146, 68%, 55%)
   );
-  --bg-card-light: hsl(227, 47%, 96%);
+  --bg-card-light: hsl(225, 100%, 98%);
+  --bg-card-light-hover: hsl(227, 47%, 96%);
 }
 
 /* Global styles */
@@ -170,6 +171,11 @@ body {
   top: 0;
   background: var(--color-dark);
 }
+
+.stats__card:hover {
+  background: var(--bg-card-light-hover);
+}
+
 .stats__card.stats__card-facebook::before {
   background: var(--color-facebook);
 }
