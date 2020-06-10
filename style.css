@@ -278,6 +278,85 @@ body {
   border-left: 5px solid transparent;
 }
 
+/* Overview styles */
+.overview__title {
+  color: var(--color-dark);
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.overview__card {
+  background: var(--bg-card-light);
+  padding: 1.4rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.overview__card:hover {
+  background: var(--bg-card-light-hover);
+}
+
+.overview__card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.overview__card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1.3rem;
+}
+
+.overview__card__title {
+  color: var(--color-gray);
+  font-weight: bold;
+}
+
+.overview__number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.overview__percentage {
+  font-weight: bold;
+}
+
+.overview__percentage.overview__percentage-up {
+  position: relative;
+  color: var(--color-success);
+}
+
+.overview__percentage.overview__percentage-up::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 1px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid var(--color-success);
+  border-left: 5px solid transparent;
+}
+
+.overview__percentage.overview__percentage-down {
+  position: relative;
+  color: var(--color-danger);
+}
+
+.overview__percentage.overview__percentage-down::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 6px;
+  border-top: 5px solid var(--color-danger);
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
 /* Responsive Styles */
 @media screen and (min-width: 570px) {
   .devider {
