@@ -47,6 +47,8 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .attribution a {
@@ -54,13 +56,10 @@ body {
 }
 
 /* Header styles */
-.header {
-  /* padding: 0 1rem; */
-}
-
 .header-wrapper {
   margin-top: 1.5rem;
 }
+
 .header__head {
   padding: 1rem 0;
 }
