@@ -157,7 +157,7 @@ body {
 .stats {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .stats__card {
@@ -317,18 +317,28 @@ body {
 
   /* Stats styles */
   .stats__card {
-    min-width: 48%;
+    min-width: 47%;
   }
 }
 
 @media screen and (min-width: 920px) {
   .stats__card {
-    min-width: 32%;
+    min-width: 31%;
+  }
+
+  .stats__card:last-of-type {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1270px) {
   .stats__card {
-    min-width: 24%;
+    min-width: 23%;
+  }
+
+  .stats__card:last-of-type {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
