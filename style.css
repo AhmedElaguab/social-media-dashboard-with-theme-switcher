@@ -1,8 +1,9 @@
 /* Variables */
 :root {
   --color-light: white;
-  --color-dark: #333;
+  --color-dark: hsl(230, 17%, 14%);
   --color-gray: #6f7388;
+  --color-gray-light: hsl(228, 34%, 66%);
   --color-success: hsl(163, 72%, 41%);
   --color-danger: hsl(356, 69%, 56%);
   --color-facebook: hsl(208, 92%, 53%);
@@ -21,6 +22,8 @@
   );
   --bg-card-light: hsl(225, 100%, 98%);
   --bg-card-light-hover: hsl(227, 47%, 96%);
+  --bg-card-dark: hsl(228, 28%, 20%);
+  --bg-card-dark-hover: hsl(228, 28%, 23%);
 }
 
 /* Global styles */
@@ -462,4 +465,67 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+/* Dark theme */
+.dark {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+.dark .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.dark .header__subtitle {
+  color: var(--color-gray-light);
+}
+
+.dark .devider {
+  border-bottom: 0.1px solid var(--color-gray-light);
+}
+
+.dark .header__foot {
+  color: var(--color-gray-light);
+}
+
+.dark .switch .slider {
+  background: var(--bg-switch-light);
+}
+
+.dark .switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.dark .stats__card {
+  background: var(--bg-card-dark);
+}
+
+.dark .stats__card:hover {
+  background: var(--bg-card-dark-hover);
+}
+
+.dark .stats__header {
+  color: var(--color-gray-light);
+}
+
+.dark .stats__followers__title {
+  color: var(--color-gray-light);
+}
+
+/* Overview styles */
+.dark .overview__title {
+  color: var(--color-light);
+}
+
+.dark .overview__card {
+  background: var(--bg-card-dark);
+}
+
+.dark .overview__card:hover {
+  background: var(--bg-card-dark-hover);
+}
+
+.dark .overview__card__title {
+  color: var(--color-gray-light);
 }
